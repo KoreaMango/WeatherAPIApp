@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="WaT-0l-cs3" detailTextLabel="rlc-zf-YR7" imageView="71b-mz-bBi" style="IBUITableViewCellStyleSubtitle" id="fff-Kr-2cR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="WaT-0l-cs3" detailTextLabel="rlc-zf-YR7" imageView="71b-mz-bBi" style="IBUITableViewCellStyleSubtitle" id="fff-Kr-2cR">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fff-Kr-2cR" id="ymL-E4-GBo">
@@ -64,6 +64,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="도시" id="tQr-Ug-LXt"/>
+                    <connections>
+                        <outlet property="tableView" destination="437-si-W0u" id="vDp-zN-QpK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +75,7 @@
         <!--날씨-->
         <scene sceneID="AhO-pc-Fzm">
             <objects>
-                <viewController id="ImT-eI-q0c" sceneMemberID="viewController">
+                <viewController id="ImT-eI-q0c" customClass="SecondViewController" customModule="wanted_pre_onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jt-J9-JyB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
