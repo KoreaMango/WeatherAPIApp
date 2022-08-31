@@ -45,6 +45,7 @@
 		04F3D09628BF3057000E5C1D = {
 			isa = PBXGroup;
 			children = (
+				0481C17828BF4604008164B4 /* doc.md */,
 				04F3D0A128BF3057000E5C1D /* wanted_pre_onboarding */,
 				04F3D0A028BF3057000E5C1D /* Products */,
 			);
@@ -70,7 +71,6 @@
 				04F3D0AB28BF305B000E5C1D /* Assets.xcassets */,
 				04F3D0AD28BF305B000E5C1D /* LaunchScreen.storyboard */,
 				04F3D0B028BF305B000E5C1D /* Info.plist */,
-				0481C17828BF4604008164B4 /* doc.md */,
 			);
 			path = wanted_pre_onboarding;
 			sourceTree = "<group>";
