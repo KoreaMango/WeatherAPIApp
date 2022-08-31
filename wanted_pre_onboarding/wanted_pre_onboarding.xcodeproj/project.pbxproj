@@ -98,8 +98,8 @@
 		04F3D0A128BF3057000E5C1D /* wanted_pre_onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				0481C17C28BF4E5F008164B4 /* Model */,
 				0481C17A28BF4E48008164B4 /* App */,
+				0481C17C28BF4E5F008164B4 /* Model */,
 				0481C17B28BF4E4C008164B4 /* ViewController */,
 				0481C17928BF4E41008164B4 /* Service */,
 				04F3D0A828BF3057000E5C1D /* Main.storyboard */,
