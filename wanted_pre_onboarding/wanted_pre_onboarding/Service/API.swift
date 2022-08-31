@@ -7,21 +7,31 @@
 
 import Foundation
 import UIKit
-// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+// 예제 : https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+// 아이콘 이미지 링크 : https://api.openweathermap.org/img/w/10d.png
 
 private let apiKey = "7d44cd3f14e73a7ec226c506bb668083"
-private let baseURL = "api.openweathermap.org"
+private let baseURL = "https://api.openweathermap.org"
+private let query = "/data/2.5/weather?q="
+private let apiQ = "&appid="
 
 class API {
-    public static var shared = API()
-    private var weathers : [Weather] = []
+    public static let shared = API()
     
-    func requestURL() {
+     func getData(cityId : String) async throws -> Datas {
+        guard let url = URL(string: baseURL + query + cityId + apiQ + apiKey) else {
+            throw ErrorMessage.invalidURL
+        }
         
-    }
-    
-    func getData(){
+        let (data, response) = try await URLSession.shared.data(from: url)
         
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw ErrorMessage.notTwoZeroZero
+        }
+        
+        let result = try JSONDecoder().decode(Datas.self, from: data)
+        
+        return result
     }
     
     func getCountry(index : Int) -> String {
@@ -42,3 +52,4 @@ class API {
         return 0
     }
 }
+
