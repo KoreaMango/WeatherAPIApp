@@ -35,7 +35,26 @@
     - 필수로 포함해야 하는 정보
         - 도시이름, 날씨 아이콘, 현재기온, 현재습도
             
-            > 공주, 광주(전라남도), 구미, 군산, 대구, 대전, 목포, 부산, 서산, 서울, 속초, 수원, 순천, 울산, 익산, 전주, 제주시, 천안, 청주, 춘천
+            > 공주 : GongJu
+            , 광주(전라남도) : GwangJu
+            , 구미 : Gumi
+            , 군산 : Gunsan
+            , 대구 : Daegu
+            , 대전 : Daejeon
+            , 목포 : Mokpo
+            , 부산 : Busan
+            , 서산 : Seosan
+            , 서울 : Seoul
+            , 속초 : Sokcho
+            , 수원 : Suwon
+            , 순천 : Suncheon
+            , 울산 : Ulsan
+            , 익산 : Iksan
+            , 전주 : Jeonju
+            , 제주시 : Jeju
+            , 천안 : Cheonan
+            , 청주 : Cheongju
+            , 춘천 : Chuncheon
             > 
         - 날씨 아이콘의 경우 API에서 제공하는 아이콘을 활용합니다.
 - 첫 번째 화면의 각 도시 정보를 선택하면 두 번째 화면으로 이동합니다
