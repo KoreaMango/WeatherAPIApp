@@ -51,7 +51,7 @@
 import Foundation
 import UIKit
 
-struct Data : Codable{
+struct Datas : Codable{
     var weather : [Weather]
     var main : Main
     var name : String
