@@ -282,6 +282,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="날씨" id="xAT-HB-UsR"/>
+                    <connections>
+                        <outlet property="imageViewIcon" destination="nGh-gs-0Ul" id="Gzy-hJ-Xej"/>
+                        <outlet property="labelFeelLike" destination="gZm-3U-srF" id="6uf-hb-KX7"/>
+                        <outlet property="labelHumidity" destination="hFe-YO-gQ8" id="FyF-1S-yWN"/>
+                        <outlet property="labelMain" destination="nPf-dO-Iz6" id="40E-NP-b1b"/>
+                        <outlet property="labelMaxTemp" destination="tar-m3-bhd" id="f96-JO-LTU"/>
+                        <outlet property="labelMinTemp" destination="UNc-uh-Hcz" id="cwZ-dq-cEX"/>
+                        <outlet property="labelName" destination="M8l-Tt-R2D" id="gce-ZP-ZOo"/>
+                        <outlet property="labelPressure" destination="y4z-YV-XG4" id="8cO-U9-Kx5"/>
+                        <outlet property="labelTemp" destination="AC3-Az-2qU" id="EtT-AL-TcK"/>
+                        <outlet property="labelWind" destination="gxJ-oB-cHD" id="7Ya-5X-WTH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3s3-Gw-Mn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
