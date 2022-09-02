@@ -10,10 +10,7 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     //MARK: - Properties
     @IBOutlet weak var tableView : UITableView!
-    let cellIdentifier: String = "Cell"
-    let countries : [String] = [ "GongJu", "GwangJu", "Gumi", "Gunsan", "Daegu", "Daejeon", "Mokpo", "Busan", "Seosan", "Seoul", "Sokcho", "Suwon", "Suncheon", "Ulsan", "Iksan", "Jeonju", "Jeju", "Cheonan", "Cheongju", "Chuncheon" ]
-    let countriesKR : [String] = [ "공주", "광주(전라남도)", "구미", "군산", "대구", "대전", "목포", "부산", "서산", "서울", "속초", "수원", "순천", "울산", "익산", "전주", "제주시", "천안", "청주", "춘천" ]
-    
+
     
     //MARK: - LifeCycle
     override func viewWillAppear(_ animated: Bool) {
