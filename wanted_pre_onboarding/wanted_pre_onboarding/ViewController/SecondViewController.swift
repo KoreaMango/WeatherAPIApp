@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var labelPressure : UILabel?
     @IBOutlet weak var labelFeelLike : UILabel?
     @IBOutlet weak var labelWind : UILabel?
+    var index : Int = 0
     
 
     override func viewDidLoad() {
