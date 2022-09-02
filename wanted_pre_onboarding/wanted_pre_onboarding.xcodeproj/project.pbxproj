@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04137E1028C1E1D600770809 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04137E0F28C1E1D600770809 /* WeatherTableViewCell.swift */; };
 		0481C17528BF4373008164B4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481C17428BF4373008164B4 /* SecondViewController.swift */; };
 		0481C17728BF4456008164B4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481C17628BF4456008164B4 /* Weather.swift */; };
 		0481C17E28BF4E7B008164B4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481C17D28BF4E7B008164B4 /* API.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04137E0F28C1E1D600770809 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		0481C17428BF4373008164B4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0481C17628BF4456008164B4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		0481C17828BF4604008164B4 /* doc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = doc.md; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				04F3D0A628BF3057000E5C1D /* FirstViewController.swift */,
 				0481C17428BF4373008164B4 /* SecondViewController.swift */,
+				04137E0F28C1E1D600770809 /* WeatherTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04137E1028C1E1D600770809 /* WeatherTableViewCell.swift in Sources */,
 				0481C17728BF4456008164B4 /* Weather.swift in Sources */,
 				0481C18028BF7CE4008164B4 /* MyError.swift in Sources */,
 				0481C17528BF4373008164B4 /* SecondViewController.swift in Sources */,

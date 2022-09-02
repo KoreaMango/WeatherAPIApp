@@ -43,20 +43,29 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             
         }
     }
+    
+    func toCelcius(kelvin : Double) -> Double {
+        var celcius = kelvin - 273.15
+        celcius = round(celcius * 100)
+        
+        return celcius / 100
+    }
 
+    
 
     //MARK: - TableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell: WeatherTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! WeatherTableViewCell
     
-        cell.textLabel?.text = datas[indexPath.row].name + " (\(countriesKR[indexPath.row]))"
-        cell.detailTextLabel?.text = "현재 기온 : " + "\(datas[indexPath.row].main.temp)°F" + " 현재 습도 : " + "\(datas[indexPath.row].main.humidity)%"
+        cell.countryLabel?.text = datas[indexPath.row].name + " (\(countriesKR[indexPath.row]))"
+        cell.tempLabel?.text = "현재 기온 : " + "\(datas[indexPath.row].main.temp)K" + " \(toCelcius(kelvin: datas[indexPath.row].main.temp))°C"
+        cell.humidityLabel?.text =  " 현재 습도 : " + "\(datas[indexPath.row].main.humidity)%"
         
         DispatchQueue.global().async { [self] in
             let data = API.shared.getIconData(iconStr: datas[indexPath.row].weather.first!.icon)
             DispatchQueue.main.async {
-                cell.imageView!.image = UIImage(data: data)
+                cell.iconImageView!.image = UIImage(data: data)
             }
         }
         
