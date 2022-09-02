@@ -27,6 +27,12 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
+        getDatas()
+       
+    }
+
+    //MARK: - CustomFunction
+    func getDatas() {
         Task {
             for country in countries{
                 datas.append( try await API.shared.getData(cityId: country))
@@ -37,9 +43,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             
         }
     }
-
-    //MARK: - CustomFunction
-    
 
 
     //MARK: - TableView
