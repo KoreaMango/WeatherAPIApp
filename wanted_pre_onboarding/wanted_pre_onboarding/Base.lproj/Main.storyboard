@@ -115,7 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-oj-gOF">
-                                <rect key="frame" x="38" y="591" width="338" height="20.5"/>
+                                <rect key="frame" x="38" y="587.5" width="338" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기압" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdi-ax-pAR">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
@@ -146,7 +146,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="FRk-W9-O4D">
-                                <rect key="frame" x="38" y="480" width="338" height="20.5"/>
+                                <rect key="frame" x="38" y="479" width="338" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최저기온" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9C-kh-MON">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
@@ -177,32 +177,32 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="IcO-ma-cdh">
-                                <rect key="frame" x="38" y="510.5" width="338" height="20.5"/>
+                                <rect key="frame" x="38" y="509.5" width="338" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최저기온" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNc-uh-Hcz">
-                                        <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="E2m-go-sAH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재기온" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-Az-2qU">
-                                        <rect key="frame" x="139" y="0.0" width="60" height="20.5"/>
+                                        <rect key="frame" x="139" y="0.0" width="60" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="lnq-eL-cp4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최대기온" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tar-m3-bhd">
-                                        <rect key="frame" x="279" y="0.0" width="59" height="20.5"/>
+                                        <rect key="frame" x="279" y="0.0" width="59" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="3yT-wO-iY6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -227,32 +227,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-VG-DXr">
-                                <rect key="frame" x="38" y="621.5" width="338" height="20.5"/>
+                                <rect key="frame" x="38" y="618" width="338" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기압" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4z-YV-XG4">
-                                        <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="h7H-9C-dUA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="풍속" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxJ-oB-cHD">
-                                        <rect key="frame" x="139" y="0.0" width="60" height="20.5"/>
+                                        <rect key="frame" x="139" y="0.0" width="60" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="Ftd-nW-0rI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재습도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFe-YO-gQ8">
-                                        <rect key="frame" x="279" y="0.0" width="59" height="20.5"/>
+                                        <rect key="frame" x="279" y="0.0" width="59" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="ZB0-ro-bQS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -264,8 +264,8 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체감기온" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-3U-srF">
-                                <rect key="frame" x="177.5" y="399.5" width="59" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="179.5" y="399.5" width="55.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
