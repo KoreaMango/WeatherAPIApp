@@ -18,6 +18,7 @@ private let imageQ = "/img/w/"
 
 class API {
     public static let shared = API()
+    var datas : [Datas] = []
     
      func getData(cityId : String) async throws -> Datas {
         guard let url = URL(string: baseURL + query + cityId + apiQ + apiKey) else {
