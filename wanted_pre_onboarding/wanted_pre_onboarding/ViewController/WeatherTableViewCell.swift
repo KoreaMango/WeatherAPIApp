@@ -9,10 +9,10 @@ import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
     //MARK: - Properties
-    @IBOutlet var iconImageView : UIImageView?
-    @IBOutlet var tempLabel : UILabel?
-    @IBOutlet var humidityLabel : UILabel?
-    @IBOutlet var countryLabel : UILabel?
+    @IBOutlet weak var iconImageView : UIImageView?
+    @IBOutlet weak var tempLabel : UILabel?
+    @IBOutlet weak var humidityLabel : UILabel?
+    @IBOutlet weak var countryLabel : UILabel?
     
     
 
