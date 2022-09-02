@@ -14,6 +14,7 @@ private let apiKey = "7d44cd3f14e73a7ec226c506bb668083"
 private let baseURL = "https://api.openweathermap.org"
 private let query = "/data/2.5/weather?q="
 private let apiQ = "&appid="
+private let imageQ = "/img/w/"
 
 class API {
     public static let shared = API()
@@ -34,22 +35,10 @@ class API {
         return result
     }
     
-    func getCountry(index : Int) -> String {
-        
-        return ""
-    }
-    
-    func getWeatherIcon(index: Int) -> UIImage {
-        
-        return UIImage()
-    }
-    func getTemperature(index: Int) -> Int {
-        
-        return 0
-    }
-    func getHumidity(index: Int) -> Int {
-        
-        return 0
+    func getIconData(iconStr : String) -> Data {
+        let url = URL(string: baseURL + imageQ + iconStr + ".png")
+        let data = try? Data(contentsOf: url!)
+        return data!
     }
 }
 
