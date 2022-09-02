@@ -8,26 +8,47 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    @IBOutlet weak var imageViewIcon : UIImageView?
-    @IBOutlet weak var labelName : UILabel?
-    @IBOutlet weak var labelMain: UILabel?
-    @IBOutlet weak var labelTemp: UILabel?
-    @IBOutlet weak var labelMinTemp: UILabel?
-    @IBOutlet weak var labelMaxTemp: UILabel?
-    @IBOutlet weak var labelHumidity: UILabel?
-    @IBOutlet weak var labelPressure : UILabel?
-    @IBOutlet weak var labelFeelLike : UILabel?
-    @IBOutlet weak var labelWind : UILabel?
+    @IBOutlet weak var imageViewIcon : UIImageView!
+    @IBOutlet weak var labelName : UILabel!
+    @IBOutlet weak var labelMain: UILabel!
+    @IBOutlet weak var labelTemp: UILabel!
+    @IBOutlet weak var labelMinTemp: UILabel!
+    @IBOutlet weak var labelMaxTemp: UILabel!
+    @IBOutlet weak var labelHumidity: UILabel!
+    @IBOutlet weak var labelPressure : UILabel!
+    @IBOutlet weak var labelFeelLike : UILabel!
+    @IBOutlet weak var labelWind : UILabel!
     var index : Int = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(index)
+        updateUI()
         // Do any additional setup after loading the view.
     }
     
+    func updateUI(){
+        
+        let data = API.shared.datas[index]
+        
+        DispatchQueue.global().async {
+            let iconData = API.shared.getIconData(iconStr: data.weather.first!.icon)
+            DispatchQueue.main.async {
+                self.imageViewIcon.image = UIImage(data: iconData)
+            }
+        }
+        
+        
+        self.labelName.text = data.name
+        self.labelMain.text = data.weather.first?.main
+        self.labelTemp.text = String(data.main.temp)
+        self.labelWind.text = String(data.wind.speed)
+        self.labelHumidity.text = String(data.main.humidity)
+        self.labelPressure.text = String(data.main.pressure)
+        self.labelMaxTemp.text = String(data.main.temp_max)
+        self.labelMinTemp.text = String(data.main.temp_min)
+        self.labelFeelLike.text = String(data.main.feels_like)
+    }
 
 
 
