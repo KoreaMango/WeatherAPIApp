@@ -41,15 +41,12 @@ class SecondViewController: UIViewController {
         
         self.labelName.text = data.name
         self.labelMain.text = data.weather.first?.main
-        self.labelTemp.text = String(data.main.temp)
-        self.labelWind.text = String(data.wind.speed)
-        self.labelHumidity.text = String(data.main.humidity)
-        self.labelPressure.text = String(data.main.pressure)
-        self.labelMaxTemp.text = String(data.main.temp_max)
-        self.labelMinTemp.text = String(data.main.temp_min)
-        self.labelFeelLike.text = String(data.main.feels_like)
+        self.labelTemp.text = "\(data.main.temp)"
+        self.labelWind.text = "\(data.wind.speed)"
+        self.labelHumidity.text = "\(data.main.humidity)"
+        self.labelPressure.text = "\(data.main.pressure)"
+        self.labelMaxTemp.text = "\(data.main.temp_max)"
+        self.labelMinTemp.text = "\(data.main.temp_min)"
+        self.labelFeelLike.text = "\(data.main.feels_like)"
     }
-
-
-
 }

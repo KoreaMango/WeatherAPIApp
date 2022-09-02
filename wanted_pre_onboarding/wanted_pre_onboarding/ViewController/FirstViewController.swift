@@ -39,14 +39,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             tableView.reloadData()
         }
     }
-    
-    func toCelcius(kelvin : Double) -> Double {
-        var celcius = kelvin - 273.15
-        celcius = round(celcius * 100)
-        return celcius / 100
-    }
-
-    
 
     //MARK: - TableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
