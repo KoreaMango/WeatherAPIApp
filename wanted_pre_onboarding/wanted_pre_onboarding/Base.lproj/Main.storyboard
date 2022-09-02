@@ -70,7 +70,7 @@
                                             <outlet property="humidityLabel" destination="g1F-PP-Ney" id="K6e-mY-xHb"/>
                                             <outlet property="iconImageView" destination="AoZ-NH-YcU" id="Pcb-of-PuB"/>
                                             <outlet property="tempLabel" destination="tnw-yu-kLi" id="YhL-kU-XCT"/>
-                                            <segue destination="ImT-eI-q0c" kind="push" id="2TP-3E-Kkn"/>
+                                            <segue destination="ImT-eI-q0c" kind="push" identifier="next" id="2TP-3E-Kkn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

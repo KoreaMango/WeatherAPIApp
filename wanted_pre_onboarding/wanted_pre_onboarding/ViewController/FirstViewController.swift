@@ -78,7 +78,13 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        
+        if segue.identifier == "next" {
+            if let destination = segue.destination as? SecondViewController {
+                if let index = self.tableView.indexPathForSelectedRow?.row {
+                    destination.index = index
+                }
+            }
+        }
         
     }
     

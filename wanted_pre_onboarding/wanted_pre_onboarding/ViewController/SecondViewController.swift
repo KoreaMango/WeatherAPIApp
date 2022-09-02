@@ -24,6 +24,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(index)
         // Do any additional setup after loading the view.
     }
     
