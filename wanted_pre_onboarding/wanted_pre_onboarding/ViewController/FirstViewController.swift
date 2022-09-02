@@ -44,7 +44,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         let target = API.shared.datas[indexPath.row]
     
         cell.countryLabel?.text = target.name + " (\(countriesKR[indexPath.row]))"
-        cell.tempLabel?.text = "현재 기온 : " + "\(target.main.temp)K |" + " \(toCelcius(kelvin: target.main.temp))°C"
+        cell.tempLabel?.text = "현재 기온 : \(toCelcius(kelvin: target.main.temp))°C"
         cell.humidityLabel?.text =  " 현재 습도 : " + "\(target.main.humidity)%"
         
         DispatchQueue.global().async {
