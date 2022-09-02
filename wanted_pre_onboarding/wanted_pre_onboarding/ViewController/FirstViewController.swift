@@ -58,7 +58,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.tempLabel?.text = "현재 기온 : " + "\(target.main.temp)K |" + " \(toCelcius(kelvin: target.main.temp))°C"
         cell.humidityLabel?.text =  " 현재 습도 : " + "\(target.main.humidity)%"
         
-        DispatchQueue.global().async { [self] in
+        DispatchQueue.global().async {
             let data = API.shared.getIconData(iconStr: target.weather.first!.icon)
             DispatchQueue.main.async {
                 cell.iconImageView!.image = UIImage(data: data)
