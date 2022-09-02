@@ -55,6 +55,7 @@ struct Datas : Codable{
     var weather : [Weather]
     var main : Main
     var name : String
+    var wind : Wind
 }
 
 struct Main : Codable {
@@ -69,4 +70,8 @@ struct Main : Codable {
 struct Weather : Codable {
     var main : String
     var icon : String
+}
+
+struct Wind : Codable {
+    var speed : Double
 }
