@@ -31,13 +31,7 @@ class SecondViewController: UIViewController {
         
         let data = API.shared.datas[index]
         
-        DispatchQueue.global().async {
-            let iconData = API.shared.getIconData(iconStr: data.weather.first!.icon)
-            DispatchQueue.main.async {
-                self.imageViewIcon.image = UIImage(data: iconData)
-            }
-        }
-        
+        self.imageViewIcon.loadImage(API.shared.iconURL(iconStr: data.weather.first!.icon))
         
         self.labelName.text = data.name + " (\(countriesKR[index]))"
         self.labelMain.text = data.weather.first?.main

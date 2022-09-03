@@ -41,5 +41,10 @@ class API {
         let data = try? Data(contentsOf: url!)
         return data!
     }
+    
+    func iconURL(iconStr : String) -> String {
+        let url = baseURL + imageQ + iconStr + ".png"
+        return url
+    }
 }
 
